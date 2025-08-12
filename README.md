@@ -2,7 +2,7 @@
 
 🔐 **Cybersecurity Analyst** | 🎨 **Graphics Designer** | 📱 **Android App Developer**  
 📧 **Email:** [muhammedijasvp69@gmail.com](mailto:muhammedijasvp69@gmail.com)  
-🔗 **LinkedIn:** [www.linkedin.com/in/muhammed-ijas-v-p-96596332b](https://www.linkedin.com/in/muhammed-ijas-v-p-96596332b)
+🔗 **LinkedIn:** [MUHAMMED IJAS VP](https://www.linkedin.com/in/muhammed-ijas-v-p-96596332b)
 
 ---
 
@@ -35,7 +35,7 @@ With a passion for both visual design and system security, I bridge the gap betw
 ## 📫 Let's Connect
 
 - 📧 Email: [muhammedijasvp69@gmail.com](mailto:muhammedijasvp69@gmail.com)
-- 🔗 LinkedIn: [www.linkedin.com/in/muhammed-ijas-v-p-96596332b](https://www.linkedin.com/in/muhammed-ijas-v-p-96596332b)
+- 🔗 LinkedIn: [MUHAMMED IJAS VP](https://www.linkedin.com/in/muhammed-ijas-v-p-96596332b)
 
 ---
 
