@@ -23,7 +23,7 @@ With a passion for both visual design and system security, I bridge the gap betw
 
 ### 🎨 Graphics Design
 - Tools: Adobe Photoshop, Illustrator, After Effects  
-- Logo Design | Poster Design | UI/UX Concepts  
+- Poster Design | UI/UX Concepts  
 
 ### 📱 Android Development
 - Languages: **Java**, **XML**  
