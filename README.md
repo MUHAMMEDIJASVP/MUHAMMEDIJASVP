@@ -36,6 +36,7 @@ With a passion for both visual design and system security, I bridge the gap betw
 
 - 📧 Email: [muhammedijasvp69@gmail.com](mailto:muhammedijasvp69@gmail.com)
 - 🔗 LinkedIn: [MUHAMMED IJAS VP](https://www.linkedin.com/in/muhammed-ijas-v-p-96596332b)
+- 🌟 Portfolio: [MUHAMMED IJAS VP](https://muhammedijasvp.github.io/ijas-portfolio/)
 
 ---
 
