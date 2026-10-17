@@ -1,0 +1,301 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 320" width="100%" height="320" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="hero-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10070C"/>
+      <stop offset="45%" stop-color="#190B12"/>
+      <stop offset="85%" stop-color="#260C1B"/>
+      <stop offset="100%" stop-color="#10070C"/>
+    </linearGradient>
+
+    <!-- Radial Wine Spotlight -->
+    <radialGradient id="hero-wine-spot" cx="65%" cy="50%" r="55%" fx="60%" fy="45%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0.38"/>
+      <stop offset="40%" stop-color="#451126" stop-opacity="0.22"/>
+      <stop offset="80%" stop-color="#190B12" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#10070C" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="hero-left-glow" cx="15%" cy="30%" r="35%">
+      <stop offset="0%" stop-color="#451126" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#10070C" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="hero-wine-rose" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#451126"/>
+      <stop offset="35%" stop-color="#701A3D"/>
+      <stop offset="70%" stop-color="#C77B9B"/>
+      <stop offset="100%" stop-color="#E5B5C7"/>
+    </linearGradient>
+
+    <linearGradient id="hero-underline-pulse" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0.2"/>
+      <stop offset="25%" stop-color="#C77B9B" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#F8F0F3" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#C77B9B" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#701A3D" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="hero-signal-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#451126" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#701A3D" stop-opacity="0.6"/>
+      <stop offset="65%" stop-color="#C77B9B" stop-opacity="0.9"/>
+      <stop offset="90%" stop-color="#E5B5C7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#F8F0F3" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="hero-glow-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="hero-glow-strong" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur1"/>
+      <feGaussianBlur stdDeviation="2" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Fine Tech Grid Pattern -->
+    <pattern id="hero-tech-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#451126" stroke-width="0.75" stroke-opacity="0.32"/>
+      <circle cx="0" cy="0" r="0.8" fill="#C77B9B" fill-opacity="0.35"/>
+    </pattern>
+
+    <pattern id="hero-dot-matrix" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="8" r="0.75" fill="#701A3D" fill-opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .mono-text {
+      font-family: 'Share Tech Mono', 'Courier New', Consolas, Monaco, monospace;
+    }
+    .sans-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    .pulse-subtle {
+      animation: heroPulse 4s ease-in-out infinite alternate;
+    }
+    @keyframes heroPulse {
+      0% { opacity: 0.35; }
+      100% { opacity: 0.85; }
+    }
+  </style>
+
+  <!-- Base Canvas Background -->
+  <rect width="100%" height="100%" fill="url(#hero-bg-grad)" rx="10" ry="10"/>
+
+  <!-- Radial Glow Accents -->
+  <rect width="100%" height="100%" fill="url(#hero-wine-spot)" rx="10" ry="10"/>
+  <rect width="100%" height="100%" fill="url(#hero-left-glow)" rx="10" ry="10"/>
+
+  <!-- Technical Grid Overlay -->
+  <rect width="100%" height="100%" fill="url(#hero-tech-grid)" rx="10" ry="10"/>
+
+  <!-- Subtle Dot Matrix in Right Sector -->
+  <rect x="520" y="20" width="370" height="280" fill="url(#hero-dot-matrix)" opacity="0.45"/>
+
+  <!-- Outer Protective Frame & Corner Brackets -->
+  <rect x="8" y="8" width="904" height="304" rx="6" ry="6" fill="none" stroke="#451126" stroke-width="1.2" stroke-opacity="0.65"/>
+  <rect x="14" y="14" width="892" height="292" rx="4" ry="4" fill="none" stroke="#701A3D" stroke-width="0.75" stroke-opacity="0.3"/>
+
+  <!-- Tactical L-Brackets -->
+  <!-- Top Left -->
+  <path d="M 18 36 L 18 18 L 36 18" fill="none" stroke="#C77B9B" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Top Right -->
+  <path d="M 884 18 L 902 18 L 902 36" fill="none" stroke="#C77B9B" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Bottom Left -->
+  <path d="M 18 284 L 18 302 L 36 302" fill="none" stroke="#C77B9B" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Bottom Right -->
+  <path d="M 884 302 L 902 302 L 902 284" fill="none" stroke="#C77B9B" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Top Telemetry Status Header -->
+  <g class="mono-text" font-size="10" fill="#C77B9B" opacity="0.85">
+    <!-- Active Status Beacon -->
+    <circle cx="36" cy="38" r="4" fill="#C77B9B">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="3.5;5;3.5" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="36" cy="38" r="7" fill="none" stroke="#E5B5C7" stroke-width="1" opacity="0.5">
+      <animate attributeName="r" values="4;10;4" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0;0.6" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="48" y="42" letter-spacing="1.5px">SYSTEM.SECURITY_GRID // ARMORED</text>
+
+    <!-- Center Coordinates -->
+    <text x="460" y="42" text-anchor="middle" letter-spacing="2px" fill="#E5B5C7" opacity="0.75">
+      11.2588° N · 75.7804° E [KOZHIKODE, IN]
+    </text>
+
+    <!-- Right Telemetry Mode -->
+    <text x="880" y="42" text-anchor="end" letter-spacing="1.5px" fill="#C77B9B">
+      NODE://OFFENSIVE_DEFENSIVE_VAPT
+    </text>
+  </g>
+
+  <!-- Top Horizontal Division Line -->
+  <line x1="28" y1="52" x2="892" y2="52" stroke="#451126" stroke-width="1" stroke-opacity="0.8"/>
+  <line x1="28" y1="52" x2="160" y2="52" stroke="#C77B9B" stroke-width="1.8" stroke-opacity="0.9"/>
+  <line x1="840" y1="52" x2="892" y2="52" stroke="#701A3D" stroke-width="1.8" stroke-opacity="0.8"/>
+
+  <!-- RIGHT WING: Orbital Cyber Defense Reticle & Network Geometry -->
+  <g id="hero-orbital-system" transform="translate(745, 172)">
+    <!-- Outer Orbital Ring -->
+    <circle cx="0" cy="0" r="88" fill="none" stroke="#451126" stroke-width="1.2" stroke-dasharray="6 8" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="45s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Secondary Segmented Ring -->
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#701A3D" stroke-width="1.6" stroke-dasharray="40 18 10 18" opacity="0.75">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="30s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Inner Target Ring -->
+    <circle cx="0" cy="0" r="48" fill="none" stroke="#C77B9B" stroke-width="1" stroke-dasharray="4 4" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Core Crosshairs -->
+    <line x1="-96" y1="0" x2="96" y2="0" stroke="#701A3D" stroke-width="0.8" stroke-dasharray="6 4" opacity="0.65"/>
+    <line x1="0" y1="-96" x2="0" y2="96" stroke="#701A3D" stroke-width="0.8" stroke-dasharray="6 4" opacity="0.65"/>
+
+    <!-- Radar Sweep Beam -->
+    <path d="M 0 0 L 58 -44 A 72 72 0 0 1 72 0 Z" fill="url(#hero-wine-spot)" opacity="0.4">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="8s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- Central Node Core -->
+    <circle cx="0" cy="0" r="6" fill="#C77B9B" filter="url(#hero-glow-soft)"/>
+    <circle cx="0" cy="0" r="2.5" fill="#F8F0F3"/>
+
+    <!-- Constellation Satellite Nodes -->
+    <g>
+      <!-- Node A -->
+      <line x1="0" y1="0" x2="48" y2="-32" stroke="#C77B9B" stroke-width="0.75" stroke-opacity="0.5"/>
+      <circle cx="48" cy="-32" r="3.5" fill="#E5B5C7" filter="url(#hero-glow-soft)"/>
+      <circle cx="48" cy="-32" r="1.5" fill="#10070C"/>
+
+      <!-- Node B -->
+      <line x1="0" y1="0" x2="-44" y2="40" stroke="#701A3D" stroke-width="0.75" stroke-opacity="0.6"/>
+      <circle cx="-44" cy="40" r="3" fill="#C77B9B"/>
+      
+      <!-- Node C -->
+      <line x1="0" y1="0" x2="-56" y2="-28" stroke="#451126" stroke-width="0.75" stroke-opacity="0.6"/>
+      <circle cx="-56" cy="-28" r="2.5" fill="#701A3D"/>
+
+      <!-- Node D -->
+      <line x1="0" y1="0" x2="52" y2="38" stroke="#C77B9B" stroke-width="0.75" stroke-opacity="0.5"/>
+      <circle cx="52" cy="38" r="3" fill="#E5B5C7"/>
+    </g>
+
+    <!-- Tactical Cardinal Markers -->
+    <text x="0" y="-76" class="mono-text" font-size="8" fill="#E5B5C7" text-anchor="middle" opacity="0.7">N_00</text>
+    <text x="78" y="3" class="mono-text" font-size="8" fill="#E5B5C7" text-anchor="start" opacity="0.7">E_90</text>
+    <text x="0" y="84" class="mono-text" font-size="8" fill="#E5B5C7" text-anchor="middle" opacity="0.7">S_180</text>
+    <text x="-80" y="3" class="mono-text" font-size="8" fill="#E5B5C7" text-anchor="end" opacity="0.7">W_270</text>
+  </g>
+
+  <!-- Dynamic Security Signal & Waveform Path -->
+  <path d="M 40 258 L 220 258 L 235 244 L 245 272 L 255 238 L 265 264 L 275 258 L 470 258 L 485 240 L 495 276 L 505 250 L 515 262 L 525 258 L 880 258" 
+        fill="none" stroke="url(#hero-signal-grad)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.75"/>
+
+  <!-- Scanning Pulse along the Signal Path -->
+  <circle cx="255" cy="238" r="3" fill="#F8F0F3" filter="url(#hero-glow-soft)">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Circuit Trace Line Elements -->
+  <g stroke="#701A3D" stroke-width="0.8" fill="none" opacity="0.55">
+    <path d="M 38 80 L 110 80 L 126 96 L 220 96"/>
+    <circle cx="220" cy="96" r="2" fill="#C77B9B"/>
+    
+    <path d="M 38 226 L 160 226 L 176 210 L 260 210"/>
+    <circle cx="260" cy="210" r="2" fill="#701A3D"/>
+
+    <path d="M 520 86 L 580 86 L 596 70 L 640 70"/>
+    <circle cx="640" cy="70" r="2" fill="#C77B9B"/>
+  </g>
+
+  <!-- MAIN IDENTITY & TYPOGRAPHY -->
+  <g transform="translate(48, 86)">
+    <!-- Top Domain Badge / Tag -->
+    <g transform="translate(0, 16)">
+      <rect x="0" y="0" width="288" height="22" rx="3" fill="#190B12" stroke="#701A3D" stroke-width="1"/>
+      <circle cx="10" cy="11" r="3" fill="#C77B9B"/>
+      <text x="20" y="15" class="mono-text" font-size="10.5" font-weight="600" fill="#E5B5C7" letter-spacing="1.5px">
+        VULNERABILITY RESEARCH &amp; DEFENSE
+      </text>
+    </g>
+
+    <!-- Candidate Full Name (High Contrast Ivory with Subtle Glow) -->
+    <text x="0" y="78" class="sans-text" font-size="44" font-weight="800" fill="#F8F0F3" letter-spacing="3.5px">
+      MUHAMMED IJAS VP
+    </text>
+
+    <!-- Glowing Dynamic Underline -->
+    <g transform="translate(0, 88)">
+      <!-- Base Underline -->
+      <rect x="0" y="0" width="460" height="3" rx="1.5" fill="url(#hero-wine-rose)"/>
+      
+      <!-- Moving Glowing Accent Bar (SMIL) -->
+      <rect x="0" y="-0.5" width="120" height="4" rx="2" fill="url(#hero-underline-pulse)" filter="url(#hero-glow-soft)">
+        <animate attributeName="x" values="0;340;0" dur="4.5s" repeatCount="indefinite" ease="easeInOut"/>
+      </rect>
+
+      <!-- Terminal Marker Dot -->
+      <circle cx="468" cy="1.5" r="2.5" fill="#E5B5C7"/>
+    </g>
+
+    <!-- Primary Title (Burgundy & Rose Elegance) -->
+    <text x="0" y="118" class="sans-text" font-size="18.5" font-weight="700" fill="#E5B5C7" letter-spacing="5.5px">
+      CYBERSECURITY PROFESSIONAL
+    </text>
+
+    <!-- Supporting Focus Domains -->
+    <g transform="translate(0, 144)">
+      <!-- Stylized Monospace Indicator -->
+      <text x="0" y="0" class="mono-text" font-size="12.5" font-weight="600" fill="#C77B9B" letter-spacing="2px">
+        PENETRATION TESTING
+      </text>
+      
+      <circle cx="178" cy="-4" r="2" fill="#701A3D"/>
+      <circle cx="178" cy="-4" r="1" fill="#E5B5C7"/>
+
+      <text x="194" y="0" class="mono-text" font-size="12.5" font-weight="600" fill="#E5B5C7" letter-spacing="2px">
+        SOC OPERATIONS
+      </text>
+
+      <circle cx="334" cy="-4" r="2" fill="#701A3D"/>
+      <circle cx="334" cy="-4" r="1" fill="#E5B5C7"/>
+
+      <text x="350" y="0" class="mono-text" font-size="12.5" font-weight="600" fill="#C77B9B" letter-spacing="2px">
+        SECURITY RESEARCH
+      </text>
+    </g>
+  </g>
+
+  <!-- Bottom Telemetry & Integrity Bar -->
+  <g class="mono-text" font-size="9" fill="#C77B9B" opacity="0.75">
+    <text x="36" y="292" letter-spacing="1.2px">
+      TRAINING: OFFENSO HACKERS ACADEMY // ADIS PURSUING
+    </text>
+    
+    <text x="500" y="292" letter-spacing="1.5px" fill="#E5B5C7" opacity="0.6">
+      MITRE ATT&amp;CK · SPLUNK SIEM · ACTIVE DIRECTORY · PTES
+    </text>
+
+    <text x="880" y="292" text-anchor="end" letter-spacing="1.2px">
+      AUTH://VERIFIED_IDENTITY
+    </text>
+  </g>
+</svg>
